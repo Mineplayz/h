@@ -1,0 +1,133 @@
+<!DOCTYPE html> <html class="responsivelayout" lang="de" data-zpdebug="false" data-ptr=""> <head> <title>Herzlich willkommen!</title> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content=""> <meta name="keywords" content=""> <meta name="generator" content="Zeta Producer 15.1.1.0, ZP15F, 26.09.2019 19:42:08"> <meta name="robots" content="index, follow"> <link rel="shortcut icon" type="image/x-icon" href="assets/stock-files/favicon.ico"> <link rel="stylesheet" type="text/css" href="assets/bundle.css?v=637103035896985335"> <link rel="stylesheet" type="text/css" href="assets/bundle-print.css?v=637103034699078992" media="print"> <style>
+.zpLinkBox1374 {min-height: 0px;padding: 25px;border-radius: 0px;background-color: rgba(255, 255, 255, 0.1);border-color: rgba(0, 0, 0, 0.1);box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);}.zpLinkBox1374:hover {background-color: rgba(255, 255, 255, 0.2);border-color: rgba(0, 0, 0, 0.2);box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);}.zpLinkBox1374 .zpLinkBoxText.afterHeading {padding-bottom: 25px;}
+</style> <!--[if IE 7]><link rel="stylesheet" type="text/css" href="assets/styles-ie7.css" media="screen"><![endif]--> <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="assets/styles-ie8.css" media="screen"><![endif]--> <script type="text/javascript" src="assets/bundle.js?v=637103035896985335"></script> <script>
+			function search1(){
+				if (document.forms.searchengine1.q.value.length == 0) {
+					alert("Bitte geben Sie einen Suchbegriff ein.");
+					return false;
+				}
+			}
+		</script> <script>    
+		function placeFooter() {
+			// place footer on bottom of window if content isn't filling the window
+			if ( $z(window).height() > $z("body").outerHeight(true) ){
+				$z(".contentcontainer").height( $z(".contentcontainer").outerHeight(false) + ($z(window).height()-$z("body").outerHeight(true)) );
+			}
+		}
+				
+		$z(window).on('load', function() {
+			
+		});
+		
+		var winWidth = $z(window).width(), winHeight = $z(window).height();
+		$z(window).resize(function(){
+			var winNewWidth = $z(window).width(), winNewHeight = $z(window).height();
+			// since .resize fires in IE also if a windows content dimensions change, first check if the window was really resized
+			if(winWidth!==winNewWidth || winHeight!==winNewHeight){
+				$z(".contentcontainer").css("height", ""); // remove previously set height so it doesn't accumulate
+				placeFooter();
+			}
+			winWidth = winNewWidth;
+			winHeight = winNewHeight;
+		});
+	</script> </head> <body id="modern-responsive"> <div class="navbar navbar-fixed-top"> <div class="navbar-inner"> <div class="container"> <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar">&nbsp;</span> <span class="icon-bar">&nbsp;</span> <span class="icon-bar">&nbsp;</span> </button> <script>
+						$z(".btn-navbar").click(function (){
+							$z("#searchform").toggle();
+						});
+					</script> <form id="searchform" name="searchengine1" onsubmit="return search1()" action="suche.html" method="get" class="pull-right"> <input id="searchfield" class="search-query pull-right" type="text" name="q" value="Suchbegriff" onfocus="if(this.value=='Suchbegriff'){this.value=''}" onblur="if(this.value==''){this.value='Suchbegriff'}"> <input id="searchbutton" type="image" name="submit" src="assets/stock-images/magnifier.png" alt="searchbutton"> </form> <a class="brand" href="http://192.168.178.82"><img src="assets/logo.png" width="45" height="46" alt="http://192.168.178.82"></a> <div class="nav-collapse collapse"> <ul class="zpmarkactive default nav nav-pills touchhovermenu clickhovermenu out" data-breakpointmobilemenu="979" data-trianglemode="true"><li class="zpnodefaults dropdown"><a href="startseite-01.html">Startseite</a></li><li class="zpnodefaults haschilds dropdown"><a href="startseite.html">Spiele &amp; Apps</a><ul class="dropdown-menu"><li class="zpnodefaults dropdown"><a class="active" href="spiele-apps.html">DgA</a></li></ul></li><li class="zpnodefaults dropdown"><a href="kontakt.html">Kontakt</a></li></ul> <script>
+$z(document).ready(function(){
+	// we find the active page's a-tag and then walk upwards the dom marking the respective parent li as active/open
+	$z('ul.zpmarkactive.default li a.active').parents('li').each(function(index){
+		var that = this;
+		// do not add open class to immediate parent li
+		if ( index > 0 ){
+			$z(that).addClass('open');
+		}
+		$z(that).addClass('active');
+		//$z(that).find('> a').addClass('active');
+	});
+	$z("ul.zpmarkactive.default").removeClass("zpmarkactive");
+	
+	/*
+	$z("ul.zpmarkactive.default li:has(a.active)").addClass("active");
+	$z("ul.zpmarkactive.default li.haschilds > a").addClass("haschilds");
+	$z("ul.zpmarkactive.default li.haschilds:has(a.active)").addClass("active");
+	$z("ul.zpmarkactive.default li.active > a").addClass("active");
+	
+	$z("ul.zpmarkactive.default").removeClass("zpmarkactive")
+	*/
+});
+</script> </div> </div> </div> </div> <a id="top"></a> <div id="header" class="fullwidth"> <div class="container"> <div class="row-fluid"> <a id="a483"></a> <div id="headslider" class="flex-container"> <div class="flexslider"> <div class="slides"> <div class="slide"> <div class="span6 caption"> <h2 style="">DgA</h2> <p>DgA ist ein Online Multiplayer Browser Spiel in dem du gegen deine Freunde in einer kleinen 2D Welt antreten kannst!</p> </div> <div class="span6"> <img src="media/images/banner-large.png" alt=""> </div> </div> </div> </div> </div> <script>
+		$z(window).on('load', function() {
+			var autoplay = true;
+			if ( $z("body").hasClass("zpreducemotion") ){
+				autoplay = false;
+			}
+			
+			$z('#headslider .flexslider').flexslider({
+				start: function(){placeFooter();},
+				animation: '',
+				slideshow: autoplay,
+				slideshowSpeed: 7000,
+				useCSS: false,
+				smoothHeight: false,
+				itemMargin: 0,
+				selector: ".slides > .slide",
+				directionNav: true,
+				controlNav: true,
+				randomize:false,
+				//controlsContainer: "#headslider.flex-container",
+				pauseOnHover: true
+			});
+			
+			// activate links for individual slideshow
+			$z('#headslider .flexslider .slides .slide[data-clickurl]').css("cursor","pointer");
+			$z('#headslider .flexslider .slides .slide[data-clickurl]').click(function (event){
+				var targ;
+				if (event.target){
+					targ = event.target;
+				}
+				else if (event.srcElement) {
+					targ = event.srcElement;
+				}
+				if (targ.nodeName == "A") {
+					// a link i.e. in Caption was clicked
+					return;
+				}
+				
+				if ( $z(this).data("clicktarget") ){
+					window.open($z(this).data("clickurl"), $z(this).data("clicktarget"));
+				}
+				else{
+					window.location = $z(this).data("clickurl");
+				}
+				event.preventDefault;
+				return false;
+			});
+		});
+  	</script> </div> </div> </div> <div class="container contentcontainer"> <div class="row-fluid"> <div class="span4 sidebar pull-right"> <div class="sidebar-nav"> <ul class="nav nav-list"> <li class="aktiv"> <a href="spiele-apps.html"><i class="icon-chevron-down">&nbsp;</i> DgA</a> </li> </ul> </div> </div> <div class="span8 content"> <div class="articles"> <div class="zparea zpgrid" data-numcolumns="" data-areaname="Standard" data-pageid="483"> <div id="container_85" class="zpContainer first last " data-zpeleel="container" data-zpleid="85"> <div class="zpRow standard " data-row-id="76"> <div class="zpColumn odd zpColumnWidth1 c12 first last" style=" " data-column-id="79"> <div class="zpColumnItem"> <div id="a1374" data-article-id="1374" data-zpleid="1374" class="articlearea zpwLinkbox"> <div class="zpLinkBox1374 zpLinkBox"> <a class="zpnolayoutlinkstyles" href="https://link-to.net/11509/DgA" style="text-indent: -99999px;">DgA Spielen</a> <div class="zpLinkBoxText"> <h2>DgA Spielen</h2> <p>Klicke hier um DgA in deinem Browser zu Spielen!</p> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div class="span4 sidebar news pull-right"> <div class="zparea " data-numcolumns="12" data-areaname="News" data-pageid="483"> </div> </div> </div> </div> <div class="fullwidth" id="footer"> <div class="container"> <div class="row-fluid"> <div id="xmenu" class=""> <a class="xmenulink" href="seite-nicht-gefunden.html">Startseite</a> <a class="xmenulink" href="kontakt.html">Kontakt</a> <a class="xmenulink" href="seite-nicht-gefunden.html">Impressum</a> </div> <div id="footerinfo"> © 2019 Mineplayz.   </div> <div style="clear:left"></div> </div> </div> </div> <script>
+		
+		
+		$z(window).on('load', function() {
+			// pull anchors below fixed header into visible area
+			var navheight = parseInt($z('.navbar').first().outerHeight());
+			
+				if ( location.hash != "" && $z(':target').length ) {
+					$z('html,body').animate({scrollTop: $z(':target').offset().top - navheight - 10 }, 600);
+				}
+				$z("a[href*='#']:not([href='#'])").not(".zpNoScroll").click(function () {
+					var target = $z(this).attr("href");
+					target = target.substring(target.indexOf("#"));
+					if ( $z(target).length ){
+						$z('html,body').animate({scrollTop: $z(target).offset().top - navheight - 10 }, 600);
+					}
+				});
+			
+		});
+		
+	</script> 
+	<!--
+	* Layout: Modern Responsive
+	* $Id: default.html 80948 2019-10-28 09:42:37Z sseiz $
+	-->
+	 </body> </html>
