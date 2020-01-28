@@ -1,0 +1,25 @@
+{
+  "settings": {
+
+    // Zum Prüfen, dass Version von Programm und Server zusammen passen.
+    "version": "14.3.0.0",
+
+    // Wo die DBs und ggf. PDFs und andere Dateien liegen.
+    // Gesehen relativ vom Root der Zeta-Producer-Website aus.
+    "serverDataFolder": "zp-server/data",
+
+    // Wo der PHP-Code liegt.
+    // Gesehen relativ vom Root der Zeta-Producer-Website aus.
+    "serverCodeFolder": "zp-server/code",
+
+    // Wo die PHP-Konfigurationsdatei liegt.
+    // Innerhalb des Roots des Backends selbst, also innerhalb des 'serverCodeFolder'.
+    "serverConfigurationFileName": "config.inc.php",
+
+    // Der Name der Datenbank auf dem Server.
+    "serverWebDatabaseName": "server.db",
+    
+    // Requests an API nur erlauben, wenn Request-Domain und Referrer-Domain die selben sind
+    "checkSameDomains": "true"
+  }
+}
