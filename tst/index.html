@@ -39,8 +39,8 @@
       p.on('connect', () => {
         console.log('CONNECT')
         var w = Math.random()
-        console.log("whatever" + w)
-        p.send('whatever' + w)
+        console.log("local_ID:" + w)
+        p.send('Remote_ID:' + w)
       })
 
       p.on('data', data => {
